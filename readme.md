@@ -1,3 +1,41 @@
+<p>
+  General description
+
+Build simple web application based on Laravel Framwework and integrate HTML template on frontend part
+
+
+Template can be downloaded here
+https://templated.co/royale
+
+App must consist of 2 parts:
+-	App home page (/)
+-	Admin area (/admin)
+
+
+Admin area
+
+Admin area must have authorization form + inside main menu with 2 CRUD sections:
+1) Categories
+●	id
+●	alias
+●	title
+2) Products
+●	id
+●	title
+●	category (dropdown)
+●	description
+●	picture (file upload component with preview)
+
+Home page
+
+On frontend home page we must integrate template from 
+https://templated.co/royale
+
+On top we must see dropdown for required category selection
+Below we must see list of products filtered by selected category
+And below - integrate pagination component.
+
+  </p>
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
