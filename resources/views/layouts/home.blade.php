@@ -79,6 +79,9 @@
                 <li>
                     <a href="{{ route('home.noslider') }}">No Sidebar</a>
                 </li>
+		<li>
+                    <a href="{{ route('admin.index') }}">Adminka</a>
+                </li>
             </ul>
         </nav>
 
