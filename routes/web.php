@@ -3,6 +3,9 @@
 
 use App\Category;
 
+
+Auth::routes();
+
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware' =>['auth']], function (){
     Route::get('/', 'DashboardController@dashboard')->name('admin.index');
 
@@ -19,13 +22,12 @@ Route::match(['get', 'post'], '/noslider', function () {
         'categories' => Category::all(),
     ]);
 })->name('home.noslider');
-Route::match(['get', 'post'], '/{id?}', 'HomeController@show')->name('home.show');
+Route::match(['get', 'post'], '/{id}', 'HomeController@show')->name('home.show');
 
 
 
 
 
 
-Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
